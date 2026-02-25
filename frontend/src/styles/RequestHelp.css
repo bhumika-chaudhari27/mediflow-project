@@ -1,0 +1,61 @@
+/* ── Coordinator Targeting Section ── */
+.coordinator-target-section {
+    margin-top: 1.2rem;
+    padding: 1rem;
+    background: rgba(59, 130, 246, 0.05);
+    border: 1px solid rgba(59, 130, 246, 0.15);
+    border-radius: 12px;
+}
+
+.target-mode-toggle {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.target-mode-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0.8rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background: white;
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.target-mode-btn:hover {
+    border-color: #3b82f6;
+    color: #3b82f6;
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.target-mode-btn.active {
+    border-color: #3b82f6;
+    background: #3b82f6;
+    color: white;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.target-info-box {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0.8rem;
+    margin-top: 0.6rem;
+    background: rgba(59, 130, 246, 0.08);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #334155;
+}
+
+.target-info-box.success {
+    background: rgba(16, 185, 129, 0.08);
+    color: #065f46;
+}

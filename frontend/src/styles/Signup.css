@@ -1,0 +1,25 @@
+@import "./Login.css";
+
+.signup-card {
+  max-width: 420px;
+}
+
+.auth-select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+.label-visible {
+  display: block;
+  font-size: 13px;
+  color: var(--mf-blue-700);
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.password-rules {
+  font-size: 11px;
+  color: var(--mf-muted);
+  margin-top: 4px;
+  text-align: left;
+}

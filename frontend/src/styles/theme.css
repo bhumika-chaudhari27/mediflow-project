@@ -1,0 +1,93 @@
+/* MediFlow – design tokens */
+:root {
+  /* Primary palette - Vibrant Blue */
+  --mf-blue-900: #0c4a6e;
+  --mf-blue-800: #075985;
+  --mf-blue-700: #0369a1;
+  --mf-blue-600: #0284c7;
+  --mf-blue-500: #0ea5e9;
+  --mf-blue-400: #38bdf8;
+  --mf-blue-300: #7dd3fc;
+  --mf-blue-200: #bae6fd;
+  --mf-blue-100: #e0f2fe;
+
+  /* Neutrals & Airy Backgrounds */
+  --mf-beige-200: #f0f9ff;
+  --mf-beige-100: #f8fafc;
+  --mf-cream: #ffffff;
+  --mf-muted: #64748b;
+  --mf-border: #e2e8f0;
+  --mf-border-light: rgba(14, 165, 233, 0.1);
+
+  /* Status */
+  --mf-success-bg: #f0fdf4;
+  --mf-warning-bg: #fffbeb;
+  --mf-warning: #d97706;
+  --mf-danger-bg: #fef2f2;
+  --mf-danger: #dc2626;
+  --mf-danger-border: #f87171;
+
+  /* Shadows - Softer for modern feel */
+  --mf-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --mf-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --mf-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Layout */
+  --mf-sidebar-width: 260px;
+  --mf-sidebar-collapsed: 72px;
+  --mf-radius: 12px;
+  --mf-radius-lg: 16px;
+}
+
+/* Premium Animations */
+@keyframes mf-pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes mf-float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes mf-fade-in-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.mf-animate-pulse {
+  animation: mf-pulse 2s infinite ease-in-out;
+}
+
+.mf-animate-float {
+  animation: mf-float 3s infinite ease-in-out;
+}
+
+.mf-animate-entrance {
+  animation: mf-fade-in-scale 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
