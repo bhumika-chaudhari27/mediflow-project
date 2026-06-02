@@ -31,7 +31,4 @@ services:
         destination: /index.html
     envVars:
       - key: REACT_APP_API_URL
-        fromService:
-          name: mediflow-backend
-          type: web
-          property: url
+        sync: false # Set by the user to their backend's public URL (e.g., https://mediflow-backend.onrender.com)
