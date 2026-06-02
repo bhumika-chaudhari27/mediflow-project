@@ -21,7 +21,6 @@ services:
   - type: web
     name: mediflow-frontend
     runtime: static
-    plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: build
